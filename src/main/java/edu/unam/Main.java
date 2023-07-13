@@ -52,7 +52,7 @@ public class Main {
         System.out.println("Iniciante: " + expediente1.getIniciante().getNombre() + " " + expediente1.getIniciante().getApellido());
         System.out.println("Involucrados: ");
         expediente1.getInvolucrados().forEach((x)->{
-            System.out.println("●\t"+ x.nombre + " " + x.apellido);
+            System.out.println("●\t"+ x.getNombre() + " " + x.getApellido());
         });
         System.out.println("Acciones: ");
         expediente1.getAcciones().forEach((x)->{

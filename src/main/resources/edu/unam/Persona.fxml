@@ -17,7 +17,7 @@
       <TextField fx:id="cuilField" layoutX="398.0" layoutY="175.0" />
       <Button layoutX="385.0" layoutY="332.0" mnemonicParsing="false" onAction="#agregar" text="Añadir" />
       <Button fx:id="btModify" disable="true" layoutX="527.0" layoutY="332.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
-      <TableView fx:id="tableView" layoutY="-1.0" onMouseClicked="#botonChanges" prefHeight="400.0" prefWidth="363.0">
+      <TableView fx:id="tableView" layoutY="-1.0" onMouseClicked="#seleccionar" prefHeight="400.0" prefWidth="363.0">
         <columns>
           <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
           <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />
