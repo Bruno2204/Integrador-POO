@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.unam.servicios.SPersona">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.unam.servicios.SPersona">
    <children>
       <Label layoutX="398.0" layoutY="21.0" text="Nombre" />
       <TextField fx:id="nameField" layoutX="398.0" layoutY="45.0" />
@@ -15,9 +15,9 @@
       <TextField fx:id="surnameField" layoutX="398.0" layoutY="114.0" />
       <Label layoutX="398.0" layoutY="151.0" text="CUIL" />
       <TextField fx:id="cuilField" layoutX="398.0" layoutY="175.0" />
-      <Button layoutX="397.0" layoutY="332.0" mnemonicParsing="false" onAction="#agregar" text="Añadir" />
-      <Button layoutX="473.0" layoutY="332.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
-      <TableView fx:id="tableView" layoutY="-1.0" prefHeight="400.0" prefWidth="363.0">
+      <Button layoutX="385.0" layoutY="332.0" mnemonicParsing="false" onAction="#agregar" text="Añadir" />
+      <Button fx:id="btModify" disable="true" layoutX="527.0" layoutY="332.0" mnemonicParsing="false" onAction="#eliminar" text="Eliminar" />
+      <TableView fx:id="tableView" layoutY="-1.0" onMouseClicked="#botonChanges" prefHeight="400.0" prefWidth="363.0">
         <columns>
           <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
           <TableColumn fx:id="colApellido" prefWidth="75.0" text="Apellido" />
@@ -27,5 +27,6 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
+      <Button fx:id="btRemove" disable="true" layoutX="448.0" layoutY="332.0" mnemonicParsing="false" onAction="#modificar" text="Modificar" />
    </children>
 </AnchorPane>
